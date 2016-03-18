@@ -1,9 +1,21 @@
 function sum(addThis, addThat) {
   var total = addThis + addThat;
-  console.log('The sum of ' + addThis + ' and ' + addThat + ' is ' + total + '.');
+  return total;
+  //console.log('The sum of ' + addThis + ' and ' + addThat + ' is ' + total + '.');
 }
 
 function multiply(multThis, multThat) {
   var product = multThis * multThat;
-  console.log('The product of ' + multThis + ' and ' + multThat + ' is ' + product + '.');
+  return product;
+  //console.log('The product of ' + multThis + ' and ' + multThat + ' is ' + product + '.');
+}
+
+function sumAndMultiply(firstSAM, secondSAM, thirdSAM) {
+  var sum1 = sum(firstSAM, secondSAM);
+  var endSum = sum(sum1, thirdSAM);
+  var product1 = multiply(firstSAM, secondSAM);
+  var endProduct = multiply(product1, thirdSAM);
+  console.log(firstSAM + ' and ' + secondSAM + ' and ' + thirdSAM + ' sum to ' + endSum + '.');
+  console.log('The numbers ' + firstSAM + ' and ' + secondSAM + ' and ' + thirdSAM + ' have a product of ' + endProduct + '.');
+  return [endSum, endProduct];
 }
