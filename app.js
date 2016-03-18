@@ -29,3 +29,13 @@ function sumArray(p4Array) {
   console.log(p4Array + ' was passed as an array of numbers, and ' + total + ' is their sum.');
   return total;
 }
+
+function multiplyArray(p5Array) {
+  var total = 1;
+  for (var i = 0; i < p5Array.length; i++) {
+    total = total * p5Array[i];
+  }
+  console.table(p5Array);
+  console.log('The numbers ' + p5Array + ' have a product of ' + total + '.');
+  return total;
+}
