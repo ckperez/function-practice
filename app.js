@@ -1,13 +1,13 @@
 function sum(addThis, addThat) {
   var total = addThis + addThat;
-  return total;
   //console.log('The sum of ' + addThis + ' and ' + addThat + ' is ' + total + '.');
+  return total;
 }
 
 function multiply(multThis, multThat) {
   var product = multThis * multThat;
-  return product;
   //console.log('The product of ' + multThis + ' and ' + multThat + ' is ' + product + '.');
+  return product;
 }
 
 function sumAndMultiply(firstSAM, secondSAM, thirdSAM) {
